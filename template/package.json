@@ -1,0 +1,29 @@
+{
+  "name": "what-if-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vertical 'What if…' video in a PS2-style low-poly look: Remotion + React Three Fiber + three.js, with synthesized sound effects.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "sound": "python3 scripts/soundtrack.py",
+    "stills": "node scripts/stills.mjs --beats",
+    "render": "npm run sound && remotion render src/index.ts WhatIf out/video.mp4 --codec=h264 --crf=18 --audio-bitrate=192k",
+    "render:4k": "npm run sound && remotion render src/index.ts WhatIf out/video-4k.mp4 --scale=2 --codec=h264 --crf=18 --audio-bitrate=256k"
+  },
+  "dependencies": {
+    "@react-three/fiber": "9.8.2",
+    "@remotion/bundler": "4.0.535",
+    "@remotion/cli": "4.0.535",
+    "@remotion/renderer": "4.0.535",
+    "@remotion/three": "4.0.535",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.535",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "typescript": "^7.0.2"
+  }
+}

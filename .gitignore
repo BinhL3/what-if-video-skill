@@ -1,0 +1,5 @@
+node_modules/
+out/
+**/public/soundtrack*.wav
+__pycache__/
+.DS_Store

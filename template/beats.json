@@ -1,0 +1,31 @@
+{
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "fadeOutFrames": 24,
+  "beats": [
+    {
+      "id": "countdown",
+      "frames": 120,
+      "countdown": "Every office worker disappears in",
+      "stats": [{"from": 0, "items": [["Downtown", "8:59 AM"]]}],
+      "captions": [[0, 120, "What if every office worker disappeared?"]]
+    },
+    {
+      "id": "vanish",
+      "frames": 75,
+      "stats": [{"from": 0, "items": [["Downtown", "9:00 AM"], ["Elapsed", "+0 SECONDS"]]}],
+      "captions": [[0, 74, "What if every office worker disappeared?"]]
+    },
+    {
+      "id": "alerts",
+      "frames": 105,
+      "stats": [
+        {"from": 0, "items": [["Elapsed", "+1 HOUR"], ["Inbox", "RISING"]]},
+        {"from": 60, "items": [["Elapsed", "+1 HOUR"], ["Inbox", "99+"]]}
+      ],
+      "captions": [[4, 103, "99+ unread. Nobody answers."]],
+      "chyron": [10, 103, "OFFICES EMPTY CITYWIDE", "Fictional demo · replace with your own story"]
+    }
+  ]
+}
