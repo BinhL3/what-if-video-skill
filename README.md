@@ -33,8 +33,9 @@ This repo is both:
 ## Install as a Claude Code skill
 
 ```bash
-# personal skill, available in every project
-git clone git@github.com:BinhL3/what-if-video-skill.git ~/.claude/skills/what-if-video
+# personal skill, available in every project (the repo is private, so use your GitHub login)
+gh repo clone BinhL3/what-if-video-skill ~/.claude/skills/what-if-video
+# or: git clone git@github.com:BinhL3/what-if-video-skill.git ~/.claude/skills/what-if-video
 ```
 
 Or copy the folder into a project's `.claude/skills/what-if-video/` so it travels with that repo. Claude picks it up automatically; just ask for something like:
